@@ -13,9 +13,7 @@
  
 .btn-sample:hover, 
 .btn-sample:focus, 
-textarea {
-    color: white;
-}
+
 .btn-sample:active, 
 .btn-sample.active, 
 .open .dropdown-toggle.btn-sample { 
@@ -52,7 +50,4 @@ fieldset[disabled] .btn-sample.active {
 .btn-sample .badge { 
   color: #FFFFFF; 
   background-color: #39B885; 
-}
-textarea {
-    color: white;
 }

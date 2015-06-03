@@ -321,9 +321,7 @@ section.success {
     color: #18bc9c;
 }
 
-form .row:first-child .floating-label-form-group {
-    border-top: 1px solid #eee;
-}
+
 
 footer {
     color: #fff;
@@ -449,11 +447,10 @@ footer .footer-below {
     opacity: 0;
 }
 
-.form-group{
-
-    color: #fff;
-}
-
-textarea {
-    color: white;
+#contform{ 
+    background-color: #fff;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -webkit-border-radius: 10px;
 }
