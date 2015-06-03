@@ -448,3 +448,12 @@ footer .footer-below {
     display: none;
     opacity: 0;
 }
+
+.form-group{
+
+    color: #fff;
+}
+
+textarea {
+    color: white;
+}
