@@ -9,8 +9,13 @@ black: rgb(67, 74, 84); #434a54ff; dark: #000;
 gold: #F39C12;
 
 */
+html {
+    height: 10000px;
+}
+
 html, body {
     max-width: 100%;
+
 }
 
 header {
