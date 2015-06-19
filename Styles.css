@@ -1,0 +1,105 @@
+/*
+color style
+red: rgb(231, 76, 60); #e74c3cff
+blue: rgb(52, 152, 219); #3498dbff
+green: rgb(68, 198, 80); #44C650
+orange: rgb(246, 187, 66); #f6bb42ff
+white: #EBEFF0
+black: rgb(67, 74, 84); #434a54ff; dark: #000;
+gold: #F39C12;
+
+*/
+html, body {
+    max-width: 100%;
+}
+
+header {
+    text-align: center;
+    color: #fff;
+    background: rgb(52, 152, 219);
+}
+
+header .container {
+	height: 900px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+header img {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+#hello {
+
+    font-family: 'Roboto'sans-serif;
+  
+}
+.name {
+    text-align: left;
+    display: block;
+    font-family: 'Roboto'sans-serif;
+    font-size: 2em;
+    font-weight: .00001;
+    background-attachment: fixed, fixed;
+    position: fixed;
+
+}
+#rubik rect{
+    transform : scale(0.3);
+    z-index: 100;
+}
+
+#rubikbase rect{
+    transform : scale(0.3);
+}
+
+
+#intro {
+    position: fixed;
+}
+
+#sec {
+    z-index: -1;
+    position: fixed;
+}
+
+#hello {
+
+}
+
+/*@media(min-width:768px) {
+    header .container {
+        padding-top: 200px;
+        padding-bottom: 100px;
+    }
+
+    header .intro-text .name {
+        font-size: 8em;
+    }
+
+    header .intro-text .skills {
+        font-size: 1.75em;
+    }
+}
+*/
+
+section {
+    padding: 100px 0;
+}
+
+section h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+section.success {
+    color: #000;
+    background: #fff;
+}
+
+section.test {
+	color:#fff;
+	background: #000;
+	background-attachment: fixed, fixed;
+}
