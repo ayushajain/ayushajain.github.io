@@ -1,14 +1,12 @@
-var height = $(window).height();
+var h = $(window).height();
+var w = $(window).width();
 
-$(".home").css("height", height.toString());
-$(".name").css("padding-top", mid.toString());
-$( window ).resize(function() {
-	height = $(window).height();
-	var mid = Math.round(height/2);
-	alert(mid);
-	$(".home").css("height", height.toString());
-	$(".name").css("padding-top", mid.toString());
+$("svg").attr("width", w);
+$("svg").attr("height", h);
+
+$(window).on('resize', function(){
+	h = $(window).height();
+	w = $(window).width();
+	$("svg").attr("width", w);
+	$("svg").attr("height", h);
 });
-
-
-//stellar
