@@ -52,11 +52,15 @@ header img {
 }
 #rubik rect{
     transform : scale(0.3);
+    -ms-transform: scale(0.3);
+    -webkit-transform: scale(0.3);
     z-index: 100;
 }
 
 #rubikbase rect{
     transform : scale(0.3);
+    -ms-transform: scale(0.3);
+    -webkit-transform: scale(0.3);
 }
 
 
