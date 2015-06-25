@@ -18,34 +18,17 @@ html, body {
 
 }
 
-header {
-    text-align: center;
-    color: #fff;
-    background: rgb(52, 152, 219);
-}
-
-header .container {
-	height: 900px;
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
-
-header img {
-    display: block;
-    margin: 0 auto 20px;
-}
-
 #hello {
 
-    font-family: 'Roboto'sans-serif;
+    font-family: 'Roboto',sans-serif;
   
 }
 .name {
     text-align: left;
     display: block;
-    font-family: 'Roboto'sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 2em;
-    font-weight: .00001;
+    font-weight: 100;
     background-attachment: fixed, fixed;
     position: fixed;
 
@@ -73,46 +56,19 @@ header img {
 }
 
 #sec {
-    z-index: -1;
     position: fixed;
 }
 
-#hello {
-
+#projectHeader {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: 100;
+    color: white;
 }
 
-/*@media(min-width:768px) {
-    header .container {
-        padding-top: 200px;
-        padding-bottom: 100px;
-    }
-
-    header .intro-text .name {
-        font-size: 8em;
-    }
-
-    header .intro-text .skills {
-        font-size: 1.75em;
-    }
-}
-*/
-
-section {
-    padding: 100px 0;
-}
-
-section h2 {
-    margin: 0;
-    font-size: 3em;
-}
-
-section.success {
-    color: #000;
-    background: #fff;
-}
-
-section.test {
-	color:#fff;
-	background: #000;
-	background-attachment: fixed, fixed;
+#Proj1Cont {
+    position: absolute;
+    z-index: 1000;
+    top: 0%;
+    left: 0%;
 }
