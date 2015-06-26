@@ -9,21 +9,25 @@ $("svg").attr("height", h);
 $("#Proj1PreInfo").fadeOut();
 
 
-
-
-$("#Proj1C").hover(
+$("#P1Hover").hover(
 	function(){
-		var opacity = $(this).css("opacity");
+		var opacity = $("#Proj1C").css("opacity");
 		if(opacity > 0.5){
-			$(this).attr("r", 40).fadeIn();
+			$("#Proj1C").attr("r", 35);
 			$("#Proj1PreInfo").fadeIn();
+			$(this).attr("x", -500);
+			$(this).attr("width", 690);
+			$(this).attr("height", 880);
 		}
 	},
 	function(){
-		var opacity = $(this).css("opacity");
+		var opacity = $("#Proj1C").css("opacity");
 		if(opacity > 0.5){
-			$(this).attr("r", 30).fadeIn();
+			$("#Proj1C").attr("r", 30);
 			$("#Proj1PreInfo").fadeOut();
+			$(this).attr("x", -31);
+			$(this).attr("width", 60);
+			$(this).attr("height", 60);
 		}
 	}
 );
