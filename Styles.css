@@ -83,3 +83,7 @@ html, body {
     z-index: 109;
     pointer-events: none
 }
+
+div {
+    margin: 0;
+}
