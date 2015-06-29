@@ -90,13 +90,13 @@ div {
 }
 
 #navbarSVG {
-    bottom: -90%;
+    bottom: -93%;
     z-index: 108;
     position: fixed;
 }
 
 #MainBar{
-    width: 1000%;
+    width: 10000%;
     transform: translate(-10%, 0);
     opacity: 0.9;
 }
