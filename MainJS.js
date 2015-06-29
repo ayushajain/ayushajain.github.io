@@ -85,3 +85,18 @@ $(window).on('resize', function(){
 
 });
 
+
+$(window).scroll(function (event) {
+    var scroll = $(window).scrollTop();
+    console.log(scroll);
+    if(scroll < 1920){
+    	$("#ScrollingBar").attr("fill", "#3498db");
+    	$("#ScrollBaseBar").attr("fill", "#3498db");
+    	$("#MainBar").attr("fill", "#337FB1");
+    }
+    else if(scroll >= 1920 && scroll < 10000){
+    	$("#ScrollingBar").attr("fill", "#e74c3c");
+    	$("#ScrollBaseBar").attr("fill", "#e74c3c");
+    	$("#MainBar").attr("fill", "#BE3D2F");
+    }
+});
