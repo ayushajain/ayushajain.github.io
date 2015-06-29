@@ -1,11 +1,12 @@
 /*
 color style
-red: rgb(231, 76, 60); #e74c3cff
-blue: rgb(52, 152, 219); #3498dbff
+red: rgb(231, 76, 60); #e74c3c
+blue: rgb(52, 152, 219); #3498db
+dark-blue: #337FB1
 green: rgb(68, 198, 80); #44C650
-orange: rgb(246, 187, 66); #f6bb42ff
+orange: rgb(246, 187, 66); #f6bb42
 white: #EBEFF0
-black: rgb(67, 74, 84); #434a54ff; dark: #000;
+black: rgb(67, 74, 84); #434a54; dark: #000;
 gold: #F39C12;
 
 */
@@ -87,3 +88,20 @@ html, body {
 div {
     margin: 0;
 }
+
+#navbarSVG {
+    bottom: -90%;
+    z-index: 108;
+    position: fixed;
+}
+
+#MainBar{
+    width: 1000%;
+    transform: translate(-10%, 0);
+    opacity: 0.9;
+}
+
+#ScrollingBar{
+    transform: translate(-262px, 0);
+}
+

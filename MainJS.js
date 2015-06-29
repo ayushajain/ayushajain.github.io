@@ -5,6 +5,8 @@ var w = $(window).width();
 $("svg").attr("width", w);
 $("svg").attr("height", h);
 
+
+
 //fade out divs
 $("#Proj1PreInfo").fadeOut();
 $("#Proj2PreInfo").fadeOut();
@@ -80,5 +82,6 @@ $(window).on('resize', function(){
 	w = $(window).width();
 	$("svg").attr("width", w);
 	$("svg").attr("height", h);
+
 });
 
