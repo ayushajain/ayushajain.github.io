@@ -113,6 +113,5 @@ $('a').click(function(){
     $('html, body').animate({
         scrollTop: scrollTo
     }, 1000);
-    console.log(scrollTo);
     return false;
 });
