@@ -102,3 +102,17 @@ $(window).scroll(function (event) {
     	$("#MainBar").attr("fill", "#BE3D2F");
     }
 });
+
+
+
+
+
+//hover anchors
+$('a').click(function(){
+	var scrollTo = parseInt($(this).attr('href'), 10);
+    $('html, body').animate({
+        scrollTop: scrollTo
+    }, 1000);
+    console.log(scrollTo);
+    return false;
+});

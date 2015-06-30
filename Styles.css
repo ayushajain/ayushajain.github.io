@@ -106,6 +106,34 @@ div {
     transform: translate(0, 0);
 }
 
+#NavPoints {
+    z-index: 110;
+    transform: translate(500px, 500px);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+    font-weight: 100;
+    fill: white;
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    text-decoration: none;
+}
 
 
 /*Scrollbar css*/
