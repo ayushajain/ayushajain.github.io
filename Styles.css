@@ -107,7 +107,7 @@ div {
 }
 
 #NavPoints {
-    z-index: 110;
+    z-index: 1100000;
     transform: translate(500px, 500px);
     font-family: 'Roboto', sans-serif;
     font-size: 1.8em;
