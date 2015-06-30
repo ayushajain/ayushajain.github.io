@@ -91,7 +91,7 @@ div {
 }
 
 #navbarSVG {
-    bottom: -93%;
+    bottom: 0%;
     z-index: 108;
     position: fixed;
 }
