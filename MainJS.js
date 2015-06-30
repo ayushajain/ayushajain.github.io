@@ -1,18 +1,17 @@
+//height & width
 var h = $(window).height();
 var w = $(window).width();
 
-
+//presize svgs
 $("svg").attr("width", w);
 $("svg").attr("height", h);
-
-
 
 //fade out divs
 $("#Proj1PreInfo").fadeOut();
 $("#Proj2PreInfo").fadeOut();
 $("#Proj3PreInfo").fadeOut();
 
-
+//project hover methods
 $("#P1Hover").hover(
 	function(){
 		var opacity = $("#Proj1C").css("opacity");
@@ -77,6 +76,7 @@ $("#P3Hover").hover(
 );
 
 
+//window resize
 $(window).on('resize', function(){
 	h = $(window).height();
 	w = $(window).width();
@@ -86,9 +86,11 @@ $(window).on('resize', function(){
 });
 
 
+
+//navbar scroll color
 $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
-    console.log(scroll);
+    //console.log(scroll);
     if(scroll < 1920){
     	$("#ScrollingBar").attr("fill", "#3498db");
     	$("#ScrollBaseBar").attr("fill", "#3498db");
