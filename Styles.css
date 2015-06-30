@@ -91,7 +91,7 @@ div {
 }
 
 #navbarSVG {
-    bottom: 0%;
+    bottom: -93%;
     z-index: 108;
     position: fixed;
 }
@@ -112,7 +112,6 @@ div {
     font-family: 'Roboto', sans-serif;
     font-size: 1.8em;
     font-weight: 100;
-    color: white;
 }
 
 
