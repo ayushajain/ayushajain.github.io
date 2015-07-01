@@ -114,7 +114,7 @@ $('html, body').animate({
 //hover anchors
 $('a').click(function(){
 	var scrollTo = parseInt($(this).attr('href'), 10);
-    $('html, body').animate({
+    $('html, body').stop().animate({
         scrollTop: scrollTo
     }, 1000);
     return false;
