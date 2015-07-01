@@ -105,9 +105,9 @@ $(window).scroll(function (event) {
 
 
 //reset document position
-$('html, body').animate({
-    scrollTop: 0
-}, 100);
+// $('html, body').animate({
+//     scrollTop: 0
+// }, 100);
 
 
 
