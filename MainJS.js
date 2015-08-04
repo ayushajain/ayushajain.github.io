@@ -109,7 +109,9 @@ $(window).scroll(function (event) {
 //     scrollTop: 0
 // }, 100);
 
-
+$(".portfolioredirect").click(function(){
+	window.location.href = "http://ayushajain.com/portfolio"
+})
 
 //hover anchors
 $('a').click(function(){
