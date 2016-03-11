@@ -1,7 +1,11 @@
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
+
+# Custom
 node_modules
+minifier.js
+
 # Folder config file
 Desktop.ini
 
