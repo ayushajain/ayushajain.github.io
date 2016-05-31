@@ -1,0 +1,337 @@
+#scene1 {
+    -skrollr-animation-name: scene1-animation;
+}
+
+#hello {
+    -skrollr-animation-name: hi-animation;
+}
+
+#intro-text{
+    -skrollr-animation-name: intro-text-animation
+}
+
+#rubik-spin {
+    -skrollr-animation-name: rubik-spin-animation;
+}
+
+#rubik-base {
+    -skrollr-animation-name: rubik-base-animation;
+}
+
+#macbook {
+    -skrollr-animation-name: macbook-animation;
+}
+
+#mouse {
+    -skrollr-animation-name: mouse-animation;
+}
+
+#iphone {
+    -skrollr-animation-name: iphone-animation;
+}
+
+#pencil {
+    -skrollr-animation-name: pencil-animation;
+}
+
+#calculator {
+    -skrollr-animation-name: calculator-animation;
+}
+
+#notepad {
+    -skrollr-animation-name: notepad-animation;
+}
+
+#mouse-wire-1 {
+    -skrollr-animation-name: mouse-wire-1-animation;
+}
+
+
+#scroll-down {
+    -skrollr-animation-name: scroll-down-animation;
+}
+
+#scene2 {
+    -skrollr-animation-name: scene2-animation;
+}
+
+#mouse-wire-2 {
+    -skrollr-animation-name: mouse-wire-2-animation;
+}
+
+#proj-1 {
+    -skrollr-animation-name: proj-1-animation;
+}
+
+#proj-2 {
+    -skrollr-animation-name: proj-2-animation;
+}
+
+#proj-3 {
+    -skrollr-animation-name: proj-3-animation;
+}
+
+#proj-4 {
+    -skrollr-animation-name: proj-4-animation;
+}
+
+#portfolio {
+    -skrollr-animation-name: portfolio-animation;
+}
+
+#portfolio-grid {
+    -skrollr-animation-name: test;
+}
+
+@-skrollr-keyframes test {
+    0 {
+        z-index: 100000;
+    }
+}
+
+/*
+ * Animations
+ */
+@-skrollr-keyframes hi-animation {
+    0 {
+        transform: translate(483px, 370px);
+    }
+
+    100 {
+        transform: translate(30px, +400px);
+    }
+}
+
+@-skrollr-keyframes intro-text-animation {
+    100 {
+        transform[swing]: translate(0, -10px);
+        opacity: 0;
+    }
+
+    200 {
+        transform[swing]: translate(0, 0px);
+        opacity: 1;
+    }
+}
+
+@-skrollr-keyframes macbook-animation {
+    50 {
+        transform[swing]: translate(0, -500px) rotate(-10deg);
+        opacity: 0;
+    }
+
+    300 {
+        transform[swing]: translate(0, 0) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+@-skrollr-keyframes mouse-animation {
+    100 {
+        transform[swing]: translate(200px, 0px) rotate(-30deg);
+        opacity: 0;
+    }
+
+    350 {
+        transform[swing]: translate(0, 0) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+@-skrollr-keyframes iphone-animation {
+    150 {
+        transform[swing]: translate(-200px, 0px) rotate(-10deg);
+        opacity: 0;
+    }
+
+    470 {
+        transform[swing]: translate(-90px, +70px) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+@-skrollr-keyframes pencil-animation {
+    25 {
+        transform[swing]: translate(0, -200px) rotate(-10deg);
+        opacity: 0;
+    }
+
+    500{
+        transform[swing]: translate(0, 0) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+@-skrollr-keyframes calculator-animation {
+    0 {
+        transform[swing]: translate(+500px, -50px) rotate(-10deg);
+        opacity: 0;
+    }
+
+    700 {
+        transform[swing]: translate(-250px, +50px) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+@-skrollr-keyframes notepad-animation {
+    0 {
+        opacity: 0;
+        transform: translate(+500px, +400px);
+    }
+
+    500 {
+        transform: translate(+350px, +200px);
+        opacity: 1;
+    }
+}
+
+@-skrollr-keyframes mouse-wire-1-animation {
+    1000 {
+        stroke-dashoffset:6000;
+    }
+
+    7500 {
+        stroke-dashoffset:0;
+    }
+}
+
+@-skrollr-keyframes rubik-base-animation {
+    0 {
+        opacity: 0;
+        transform: translate(-700px, -100px) rotate(0deg) scale(0.3);
+    }
+
+    900 {
+        opacity: 1;
+        transform: translate(-553px, 165px) rotate(50deg) scale(0.3)
+    }
+}
+
+@-skrollr-keyframes rubik-spin-animation {
+    0 {
+        opacity: 0;
+        transform: translate(-700px, -100px) rotate(0deg) scale(0.3);
+    }
+
+    900 {
+        opacity: 1;
+        transform: translate(-560px, 170px) rotate(50deg) scale(0.3)
+    }
+
+    1200 {
+        opacity: 1;
+        transform: translate(-560px, 170px) rotate(340deg) scale(0.3)
+    }
+}
+
+@-skrollr-keyframes scroll-down-animation {
+    0 {
+        opacity: 0.6;
+    }
+
+    20 {
+        opacity: 0;
+    }
+}
+
+@-skrollr-keyframes scene1-animation {
+    1400 {
+        top: 0%;
+    }
+
+    1850{
+        top: -100%;
+    }
+}
+
+/*
+ * Scene 2 Animation
+ */
+@-skrollr-keyframes scene2-animation {
+    1400 {
+        top: 100%;
+    }
+
+    1850 {
+        top: 0%;
+    }
+
+    1850 {
+        top: 0%;
+    }
+
+    2150 {
+        top: -100%
+    }
+}
+
+@-skrollr-keyframes mouse-wire-2-animation {
+    1490 {
+        stroke-dashoffset: 6000;
+    }
+
+    3000 {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-skrollr-keyframes proj-1-animation {
+    1650 {
+        transform: translateX(+90px);
+        opacity: 0;
+    }
+
+    1750 {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@-skrollr-keyframes proj-2-animation {
+    1650 {
+        transform: translateX(-90px);
+        opacity: 0;
+    }
+
+    1750 {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@-skrollr-keyframes proj-3-animation {
+    1700 {
+        transform: translateX(+90px);
+        opacity: 0;
+    }
+
+    1800 {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@-skrollr-keyframes proj-4-animation {
+    1700 {
+        transform: translateX(-90px);
+        opacity: 0;
+    }
+
+    1800 {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@-skrollr-keyframes portfolio-animation {
+    1450 {
+        transform[swing]: translate(0, -10px);
+        opacity: 0;
+    }
+
+    1500 {
+        transform[swing]: translate(0, 0px);
+        opacity: 1;
+    }
+}

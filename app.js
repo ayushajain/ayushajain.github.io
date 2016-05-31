@@ -8,20 +8,13 @@ var bodyParser = require('body-parser');
 var path = require('path');
 var app = express();
 
-app.set('port', process.env.PORT || 3000)
-app.use(logger('dev'))
-app.use(bodyParser.json())
-
-var publicDir = path.join(__dirname, '')
-
-app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname, 'index.html'))
-});
-
+var publicDir = path.join(__dirname, '');
+app.set('port', process.env.PORT || 3000);
+app.use(logger('dev'));
+app.use(bodyParser.json());
 app.use("/", express.static(__dirname));
 
 var server = http.createServer(app);
-
 var exec = require('child_process').exec;
 var cmd = 'guard';
 
@@ -36,7 +29,7 @@ server.listen(app.get('port'), function(req, res) {
         if (curr.mtime.getTime() == prev.mtime.getTime());
         else {
             console.log("mtime not equal");
-            minifyFile();
+            // minifyFile();
             reload(server, app)
         }
     });
