@@ -54,11 +54,11 @@ $(window).scroll(function (event) {
 const VERTICAL_OFFSET = 100;
 const HORIZONTAL_OFFSET = -39;
 
-const IMAGE_WIDTH = 250;
+const IMAGE_WIDTH = 270;
 const IMAGE_HEIGHT = 250;
 const VIEWBOX_WIDTH = 900;
-const HORIZONTAL_MARGIN = 70;
-const VERTICAL_MARGIN = -63;
+const HORIZONTAL_MARGIN = 0;
+const VERTICAL_MARGIN = -97;
 
 var PROJECTS = {
 	dexto: {
@@ -145,9 +145,10 @@ for(var j = 0; j < numRows + 1;j++){
 			console.log(PROJECTS[projectKeys[currProject]].title)
 
 			grid += '<a xlink:href="http://google.com">';
-			grid += '<rect width="270" height="185" transform="translate(' + (HORIZONTAL_OFFSET + i * IMAGE_WIDTH + (i * HORIZONTAL_MARGIN / numPerRow)) + ', ' + (VERTICAL_OFFSET + IMAGE_HEIGHT * j + j * VERTICAL_MARGIN) + ')" style="fill: #EBEFF0;stroke-width:2;stroke:#434a54" />';
+			//grid += '<rect width="270" height="185" transform="translate(' + (HORIZONTAL_OFFSET + i * IMAGE_WIDTH + (i * HORIZONTAL_MARGIN / numPerRow)) + ', ' + (VERTICAL_OFFSET + IMAGE_HEIGHT * j + j * VERTICAL_MARGIN) + ')" style="fill: #EBEFF0;stroke-width:2;stroke:#434a54" />';
 			grid += '<image transform="translate(' + (IMAGE_HORI_OFFSET + HORIZONTAL_OFFSET + i * IMAGE_WIDTH + (i * HORIZONTAL_MARGIN / numPerRow)) + ', ' + (IMAGE_VERT_OFFSET + VERTICAL_OFFSET + IMAGE_HEIGHT * j + j * VERTICAL_MARGIN) + ')" width="' + IMAGE_WIDTH + '" height="' + IMAGE_HEIGHT + '" xlink:href="' + img + '"></image>';
-			grid += '<text class="portfolio-text" transform="translate(' + (15 + HORIZONTAL_OFFSET + i * IMAGE_WIDTH + (i * HORIZONTAL_MARGIN / numPerRow)) + ', ' + (173 + VERTICAL_OFFSET + IMAGE_HEIGHT * j + j * VERTICAL_MARGIN) + ')">' +  PROJECTS[projectKeys[currProject]].title + '</text>'
+			grid += '<image transform="translate(' + (IMAGE_HORI_OFFSET + HORIZONTAL_OFFSET + i * IMAGE_WIDTH + (i * HORIZONTAL_MARGIN / numPerRow)) + ', ' + (IMAGE_VERT_OFFSET + VERTICAL_OFFSET + IMAGE_HEIGHT * j + j * VERTICAL_MARGIN) + ')" width="' + IMAGE_WIDTH + '" height="' + IMAGE_HEIGHT + '" xlink:href="img/Gradient.png"></image>';
+			grid += '<text class="portfolio-text" transform="translate(' + (15 + HORIZONTAL_OFFSET + i * IMAGE_WIDTH + (i * HORIZONTAL_MARGIN / numPerRow)) + ', ' + (149 + VERTICAL_OFFSET + IMAGE_HEIGHT * j + j * VERTICAL_MARGIN) + ')">' +  PROJECTS[projectKeys[currProject]].title + '</text>'
 			grid += '</a>';
 		}
 		currProject++;
