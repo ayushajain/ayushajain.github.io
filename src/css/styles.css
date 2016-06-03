@@ -12,12 +12,11 @@ black: rgb(67, 74, 84); #434a54; dark: #000;
 gold: #F39C12;
 
 */
-html {
-    height: 4000px !important;
-}
 
 html, body {
     max-width: 100%;
+    height: 3000px !important;
+    background-color: #3498db !important;
 }
 
 #scene1, #scene2, #scene3, #footer{
