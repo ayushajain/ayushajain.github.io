@@ -30,6 +30,7 @@ html, body {
 
 #scene2 {
     z-index: 9;
+    opacity: 0;
 }
 
 #scene3 {

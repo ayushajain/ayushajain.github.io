@@ -230,3 +230,7 @@ $("#portfolio-grid").html(grid);
 for(var i = 0; i < projectKeys.length; i++){
 	$("#" + projectKeys[i] + "-description").hide();
 }
+
+$("#scene2").delay(100).css({
+	opacity: 1
+})
