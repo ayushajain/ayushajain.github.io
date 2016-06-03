@@ -17,6 +17,8 @@ html, body {
     max-width: 100%;
     height: 3000px !important;
     background-color: #3498db !important;
+    margin: 0;
+    padding: 0;
 }
 
 #scene1, #scene2, #scene3, #footer{
@@ -45,6 +47,17 @@ html, body {
     box-shadow: 0 0 200px rgba(0, 0, 0, .3) inset;
     z-index: 10000000000;
     pointer-events: none
+}
+
+.contentText {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+.portfolio-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px !important;
 }
 
 #NavPoints {

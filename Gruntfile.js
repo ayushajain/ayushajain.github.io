@@ -17,7 +17,7 @@ module.exports = function(grunt) {
         htmlmin: {
             options: {
                 removeComments: true,
-                collapseWhitespace: false
+                collapseWhitespace: true
             },
             build:{
                 cwd: 'src',
@@ -30,7 +30,7 @@ module.exports = function(grunt) {
         copy: {
             main: {
                 files: [
-                    {expand: true, flatten: true, src: ['src/css/skrollr-styles.css', 'src/css/bootstrap.min.css'], dest: 'css', filter: 'isFile'},
+                    {expand: true, flatten: true, src: ['src/css/skrollr-styles.css'], dest: 'css', filter: 'isFile'},
                 ],
             },
         },
@@ -46,6 +46,14 @@ module.exports = function(grunt) {
                 ext: '.min.css',
                 expand: true
             }
+        },watch: {
+            scripts: {
+                files: ['src/**'],
+                tasks: ['cssmin', 'copy', 'htmlmin', 'uglify'],
+                options: {
+                    spawn: false,
+                },
+            },
         }
     });
 
@@ -53,8 +61,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-copy')
+    grunt.loadNpmTasks('grunt-contrib-watch')
     // Default task(s)
-    grunt.registerTask('default', ['uglify', 'htmlmin', 'cssmin', 'copy']);
+    grunt.registerTask('default', ['uglify', 'htmlmin', 'cssmin', 'copy', 'watch']);
 
 };
