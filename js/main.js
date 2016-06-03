@@ -1,6 +1,9 @@
 "use strict";
 
-$("#scene2").fadeOut(0).delay(500).fadeIn(0);
+$("#scene2").delay(500).queue(function (next) {
+	$(this).css('opacity', '1');
+	next();
+});
 
 //height & width
 var h = $(window).height();
