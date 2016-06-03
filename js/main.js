@@ -1,5 +1,7 @@
 "use strict";
 
+$("#scene2").fadeOut(0).delay(500).fadeIn(0);
+
 //height & width
 var h = $(window).height();
 var w = $(window).width();
@@ -230,7 +232,3 @@ $("#portfolio-grid").html(grid);
 for(var i = 0; i < projectKeys.length; i++){
 	$("#" + projectKeys[i] + "-description").hide();
 }
-
-$("#scene2").delay(100).css({
-	opacity: 1
-})
