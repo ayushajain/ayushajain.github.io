@@ -21,7 +21,8 @@ module.exports = function(grunt) {
                     collapseWhitespace: true
                 },
                 files: {                                   // Dictionary of files
-                    'index.html': 'src/index.html'
+                    'index.html': 'src/index.html',
+                    'about.html': 'src/about.html'
                 }
             }
         },
@@ -35,11 +36,10 @@ module.exports = function(grunt) {
         cssmin: {
             options: {
                 removeComments: true,
-                collapseWhitespace: false
             },
             build:{
                 cwd: 'src/css',
-                src: ['styles.css'],
+                src: ['about.css', 'styles.css'],
                 dest: 'css',
                 ext: '.min.css',
                 expand: true

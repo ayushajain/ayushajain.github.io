@@ -15,9 +15,9 @@ gold: #F39C12;
 
 html, body {
     max-width: 100%;
-    height: 2050px !important;
     margin: 0;
     padding: 0;
+
 }
 
 #scene1, #scene2, #scene3, #footer{
@@ -98,8 +98,8 @@ html, body {
     font-weight: 200;
     line-height: 40px;
     height: 40px;
-    margin-left: 100px;
-    margin-right: 120px;
+    margin-left: 50px;
+    margin-right: 110px;
 }
 
 
@@ -148,24 +148,8 @@ html, body {
 
 /* senseful css */
 
-a:link {
+.topnav li a, .topnav li a:focus, .topnav li a:hover, .topnav li a:visited {
+    color: #000 !important;
     text-decoration: none !important;
-    color: inherit !important;
 }
-
-a:visited {
-    text-decoration: none !important;
-    color: inherit !important;
-}
-
-a:hover {
-    text-decoration: none !important;
-    color: inherit !important;
-}
-
-a:active {
-    text-decoration: none !important;
-    color: inherit !important;
-}
-
 
