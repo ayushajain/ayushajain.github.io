@@ -61,6 +61,24 @@ $(window).scroll(function (event) {
 });
 
 
+//home text changer
+var adjectives = ["thinker.", "entrepreneur.", "innovator.", "coder.", "maker.", "developer.", "designer.", "hacker."];
+var queue = [];
+var index = 0
+
+setInterval(function() {
+	if (index >= adjectives.length)
+		index = 0
+
+	$("#home-flip").fadeOut(function() {
+		$(this).text(adjectives[index]).fadeIn();
+	});
+
+	index++
+
+}, 3000)
+
+
 var PROJECTS = {
 	dexto: {
 		title: "Dexto",
@@ -227,6 +245,14 @@ for(var j = 0; j < numRows + 1;j++) {
 	}
 }
 
+$(document).on('mouseenter', ('#scene2-background'), function () {
+	for (var project in projectKeys) {
+		$("#" + projectKeys[project] + "-hover").stop().animate({
+			'height': '154'
+		}, 0);
+		$("#" + projectKeys[project] + "-description").hide();
+	}
+});
 
 
 $("#portfolio-grid").html(grid);

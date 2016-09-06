@@ -15,16 +15,14 @@ module.exports = function(grunt) {
             }
         },
         htmlmin: {
-            options: {
-                removeComments: true,
-                collapseWhitespace: true
-            },
-            build:{
-                cwd: 'src',
-                src: ['*.html'],
-                dest: '',
-                ext: '.html',
-                expand: true
+            dist: {                                      // Target
+                options: {                                 // Target options
+                    removeComments: true,
+                    collapseWhitespace: true
+                },
+                files: {                                   // Dictionary of files
+                    'index.html': 'src/index.html'
+                }
             }
         },
         copy: {
@@ -51,18 +49,22 @@ module.exports = function(grunt) {
                 files: ['src/**'],
                 tasks: ['cssmin', 'copy', 'htmlmin', 'uglify'],
                 options: {
-                    spawn: false,
+                    spawn: false
                 },
             },
-        }
+            options: {
+                livereload: true
+            }
+        },
+
     });
 
     // Load the plugin that provides the "uglify" task.
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-contrib-copy')
-    grunt.loadNpmTasks('grunt-contrib-watch')
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-watch');
     // Default task(s)
     grunt.registerTask('default', ['uglify', 'htmlmin', 'cssmin', 'copy', 'watch']);
 

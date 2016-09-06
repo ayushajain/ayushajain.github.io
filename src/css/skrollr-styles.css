@@ -79,8 +79,12 @@
     -skrollr-animation-name: portfolio-animation;
 }
 
-#portfolio-grid {
-    -skrollr-animation-name: test;
+#scene3 {
+    -skrollr-animation-name: scene3-animation;
+}
+
+#mouse-wire-3 {
+    -skrollr-animation-name: mouse-wire-3-animation;
 }
 
 @-skrollr-keyframes test {
@@ -267,7 +271,7 @@
         stroke-dashoffset: 6000;
     }
 
-    3000 {
+    5000 {
         stroke-dashoffset: 0;
     }
 }
@@ -330,4 +334,26 @@
         transform[swing]: translate(0, 0px);
         opacity: 1;
     }
+}
+
+/* scene 3 animation */
+@-skrollr-keyframes scene3-animation {
+    2050 {
+        top: 100%;
+    }
+
+    2350 {
+        top: 0%
+    }
+}
+
+
+@-skrollr-keyframes mouse-wire-3-animation {
+2500 {
+    stroke-dashoffset: 6000;
+}
+
+5400 {
+    stroke-dashoffset: 0;
+}
 }

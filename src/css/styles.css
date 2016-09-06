@@ -15,8 +15,7 @@ gold: #F39C12;
 
 html, body {
     max-width: 100%;
-    height: 3000px !important;
-    background-color: #3498db !important;
+    height: 2050px !important;
     margin: 0;
     padding: 0;
 }
@@ -56,7 +55,7 @@ html, body {
 
 .portfolio-text {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 14px !important;
 }
 
@@ -69,7 +68,12 @@ html, body {
 }
 
 .wire {
-    opacity: 0.6
+    opacity: 0.6;
+    fill:none;
+    stroke:#FFFFFF;
+    stroke-width:3;
+    stroke-dasharray: 6000;
+    stroke-dashoffset: 6000;
 }
 
 /* Navbar */
@@ -88,7 +92,7 @@ html, body {
 .nav li {
     font-family: 'Roboto', sans-serif;
     display: inline-block;
-    color: #EBEFF0; !important;
+    color: #000; !important;
     opacity: 1;
     font-size: 3vmin;
     font-weight: 200;
@@ -102,6 +106,7 @@ html, body {
 /* Scene 1 */
 #hello {
     font-family: 'Roboto',sans-serif;
+    font-weight: 400;
 }
 
 #rubik-base, #rubik-spin{
