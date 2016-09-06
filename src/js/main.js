@@ -29,7 +29,7 @@ $(".nav").hide().delay(1000).fadeIn(2000);
 $("#scroll-down").hide().delay(1000).fadeIn();
 
 //scroll to scene x
-$("ul.topnav > li").click(function(){
+$("#scroll-down-trigger").click(function(){
 	var scrollOffset = $(this).attr('scroll');
 	var scrollTime = Math.abs(scrollOffset - document.body.scrollTop);
 
@@ -67,7 +67,7 @@ var queue = [];
 var index = 0
 
 setInterval(function() {
-	if (index >= adjectives.length)
+	if (index >= adjectives.length - 1)
 		index = 0
 
 	$("#home-flip").fadeOut(function() {
@@ -76,7 +76,7 @@ setInterval(function() {
 
 	index++
 
-}, 3000)
+}, 1500)
 
 
 var PROJECTS = {
