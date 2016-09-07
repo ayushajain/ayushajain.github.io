@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ayushajain/ayushajain.github.io#readme",
   "devDependencies": {
-    "grunt": "^1.0.1"
+    "grunt": "^1.0.1",
+    "grunt-express-server": "^0.5.3"
   }
 }

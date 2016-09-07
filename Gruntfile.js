@@ -55,17 +55,26 @@ module.exports = function(grunt) {
             options: {
                 livereload: true
             }
-        },
-
+        },express: {
+            options: {
+                // Override defaults here
+            },
+            dev: {
+                options: {
+                    script: 'webserver.js'
+                }
+            }
+        }
     });
 
     // Load the plugin that provides the "uglify" task.
+    grunt.loadNpmTasks('grunt-express-server');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-watch');
     // Default task(s)
-    grunt.registerTask('default', ['uglify', 'htmlmin', 'cssmin', 'copy', 'watch']);
+    grunt.registerTask('default', ['uglify', 'htmlmin', 'cssmin', 'copy', 'express', 'watch']);
 
 };
