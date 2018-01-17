@@ -19,5 +19,14 @@
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-express-server": "^0.5.3"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-htmlmin": "^2.4.0",
+    "grunt-contrib-uglify": "^3.1.0",
+    "grunt-contrib-watch": "^1.0.0"
   }
 }
